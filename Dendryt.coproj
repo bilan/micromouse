@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.7" name="Dendryt">
+  <Target name="Dendryt" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="342" chipName="STM32F405RG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Option name="FPU" value="2"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F405RG"/>
+          <Define name="STM32F4XX"/>
+          <Define name="__FPU_USED"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Use base C Library"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="../../../../../coocox/coide/configuration/programdata/dendryt/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="Dendryt"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="517" name="USART" path="" type="2"/>
+    <Component id="958" name="Retarget printf, syscalls" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="lib/src/stm32f4xx_dcmi.c" path="lib/src/stm32f4xx_dcmi.c" type="1"/>
+    <File name="lib/src/stm32f4xx_cryp_tdes.c" path="lib/src/stm32f4xx_cryp_tdes.c" type="1"/>
+    <File name="boot/startup_stm32f4xx.c" path="boot/startup_stm32f4xx.c" type="1"/>
+    <File name="lib/src/stm32f4xx_flash_ramfunc.c" path="lib/src/stm32f4xx_flash_ramfunc.c" type="1"/>
+    <File name="lib/inc/misc.h" path="lib/inc/misc.h" type="1"/>
+    <File name="boot" path="" type="2"/>
+    <File name="lib/inc/stm32f4xx_wwdg.h" path="lib/inc/stm32f4xx_wwdg.h" type="1"/>
+    <File name="lib/src/stm32f4xx_pwr.c" path="lib/src/stm32f4xx_pwr.c" type="1"/>
+    <File name="lib/src/stm32f4xx_wwdg.c" path="lib/src/stm32f4xx_wwdg.c" type="1"/>
+    <File name="lib/src/stm32f4xx_cryp_des.c" path="lib/src/stm32f4xx_cryp_des.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_rtc.h" path="lib/inc/stm32f4xx_rtc.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_sai.h" path="lib/inc/stm32f4xx_sai.h" type="1"/>
+    <File name="mylib/src/delay.c" path="mylib/src/delay.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_sdio.h" path="lib/inc/stm32f4xx_sdio.h" type="1"/>
+    <File name="lib/src/stm32f4xx_rng.c" path="lib/src/stm32f4xx_rng.c" type="1"/>
+    <File name="CMSIS" path="" type="2"/>
+    <File name="boot/stm32f4xx.h" path="boot/stm32f4xx.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_cryp.h" path="lib/inc/stm32f4xx_cryp.h" type="1"/>
+    <File name="main.h" path="main.h" type="1"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="lib/src/stm32f4xx_sai.c" path="lib/src/stm32f4xx_sai.c" type="1"/>
+    <File name="lib/src/stm32f4xx_adc.c" path="lib/src/stm32f4xx_adc.c" type="1"/>
+    <File name="lib/src/stm32f4xx_fsmc.c" path="lib/src/stm32f4xx_fsmc.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_dcmi.h" path="lib/inc/stm32f4xx_dcmi.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_gpio.h" path="lib/inc/stm32f4xx_gpio.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_dma.h" path="lib/inc/stm32f4xx_dma.h" type="1"/>
+    <File name="CMSIS/core_cm0plus.h" path="CMSIS/core_cm0plus.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_pwr.h" path="lib/inc/stm32f4xx_pwr.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_i2c.h" path="lib/inc/stm32f4xx_i2c.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_dma2d.h" path="lib/inc/stm32f4xx_dma2d.h" type="1"/>
+    <File name="lib" path="" type="2"/>
+    <File name="CMSIS/core_sc000.h" path="CMSIS/core_sc000.h" type="1"/>
+    <File name="lib/src/stm32f4xx_cryp_aes.c" path="lib/src/stm32f4xx_cryp_aes.c" type="1"/>
+    <File name="lib/src/stm32f4xx_cryp.c" path="lib/src/stm32f4xx_cryp.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_flash_ramfunc.h" path="lib/inc/stm32f4xx_flash_ramfunc.h" type="1"/>
+    <File name="mylib/inc/adc.h" path="mylib/inc/adc.h" type="1"/>
+    <File name="mylib/src/usart.c" path="mylib/src/usart.c" type="1"/>
+    <File name="lib/src/stm32f4xx_flash.c" path="lib/src/stm32f4xx_flash.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_flash.h" path="lib/inc/stm32f4xx_flash.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_fsmc.h" path="lib/inc/stm32f4xx_fsmc.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_adc.h" path="lib/inc/stm32f4xx_adc.h" type="1"/>
+    <File name="lib/src/stm32f4xx_dma2d.c" path="lib/src/stm32f4xx_dma2d.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_rcc.h" path="lib/inc/stm32f4xx_rcc.h" type="1"/>
+    <File name="mylib/inc/led.h" path="mylib/inc/led.h" type="1"/>
+    <File name="mylib/src/adc.c" path="mylib/src/adc.c" type="1"/>
+    <File name="lib/src/misc.c" path="lib/src/misc.c" type="1"/>
+    <File name="mylib" path="" type="2"/>
+    <File name="mylib/inc/pwm.h" path="mylib/inc/pwm.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_iwdg.h" path="lib/inc/stm32f4xx_iwdg.h" type="1"/>
+    <File name="lib/src/stm32f4xx_gpio.c" path="lib/src/stm32f4xx_gpio.c" type="1"/>
+    <File name="mylib/src/led.c" path="mylib/src/led.c" type="1"/>
+    <File name="mylib/inc/buzzer.h" path="mylib/inc/buzzer.h" type="1"/>
+    <File name="lib/src/stm32f4xx_sdio.c" path="lib/src/stm32f4xx_sdio.c" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="mylib/inc/algo.h" path="mylib/inc/algo.h" type="1"/>
+    <File name="mylib/src" path="" type="2"/>
+    <File name="lib/src/stm32f4xx_usart.c" path="lib/src/stm32f4xx_usart.c" type="1"/>
+    <File name="mylib/src/controller.c" path="mylib/src/controller.c" type="1"/>
+    <File name="mylib/inc" path="" type="2"/>
+    <File name="lib/src/stm32f4xx_hash.c" path="lib/src/stm32f4xx_hash.c" type="1"/>
+    <File name="mylib/src/button.c" path="mylib/src/button.c" type="1"/>
+    <File name="mylib/src/algo.c" path="mylib/src/algo.c" type="1"/>
+    <File name="mylib/src/pwm.c" path="mylib/src/pwm.c" type="1"/>
+    <File name="boot/stm32f4xx_it.c" path="boot/stm32f4xx_it.c" type="1"/>
+    <File name="mylib/src/sensor.c" path="mylib/src/sensor.c" type="1"/>
+    <File name="CMSIS/arm_math.h" path="CMSIS/arm_math.h" type="1"/>
+    <File name="lib/src/stm32f4xx_dbgmcu.c" path="lib/src/stm32f4xx_dbgmcu.c" type="1"/>
+    <File name="lib/src/stm32f4xx_spi.c" path="lib/src/stm32f4xx_spi.c" type="1"/>
+    <File name="mylib/src/encoder.c" path="mylib/src/encoder.c" type="1"/>
+    <File name="mylib/inc/controller.h" path="mylib/inc/controller.h" type="1"/>
+    <File name="CMSIS/core_cm0.h" path="CMSIS/core_cm0.h" type="1"/>
+    <File name="lib/src/stm32f4xx_syscfg.c" path="lib/src/stm32f4xx_syscfg.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_syscfg.h" path="lib/inc/stm32f4xx_syscfg.h" type="1"/>
+    <File name="mylib/inc/usart.h" path="mylib/inc/usart.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_exti.h" path="lib/inc/stm32f4xx_exti.h" type="1"/>
+    <File name="boot/stm32f4xx_it.h" path="boot/stm32f4xx_it.h" type="1"/>
+    <File name="lib/src/stm32f4xx_exti.c" path="lib/src/stm32f4xx_exti.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_tim.h" path="lib/inc/stm32f4xx_tim.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_usart.h" path="lib/inc/stm32f4xx_usart.h" type="1"/>
+    <File name="mylib/inc/encoder.h" path="mylib/inc/encoder.h" type="1"/>
+    <File name="lib/src/stm32f4xx_dma.c" path="lib/src/stm32f4xx_dma.c" type="1"/>
+    <File name="CMSIS/arm_const_structs.h" path="CMSIS/arm_const_structs.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_crc.h" path="lib/inc/stm32f4xx_crc.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_rng.h" path="lib/inc/stm32f4xx_rng.h" type="1"/>
+    <File name="lib/src/stm32f4xx_i2c.c" path="lib/src/stm32f4xx_i2c.c" type="1"/>
+    <File name="mylib/src/buzzer.c" path="mylib/src/buzzer.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_hash.h" path="lib/inc/stm32f4xx_hash.h" type="1"/>
+    <File name="boot/system_stm32f4xx.h" path="boot/system_stm32f4xx.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_dac.h" path="lib/inc/stm32f4xx_dac.h" type="1"/>
+    <File name="lib/src/stm32f4xx_dac.c" path="lib/src/stm32f4xx_dac.c" type="1"/>
+    <File name="lib/src" path="" type="2"/>
+    <File name="lib/src/stm32f4xx_iwdg.c" path="lib/src/stm32f4xx_iwdg.c" type="1"/>
+    <File name="lib/src/stm32f4xx_rtc.c" path="lib/src/stm32f4xx_rtc.c" type="1"/>
+    <File name="lib/src/stm32f4xx_ltdc.c" path="lib/src/stm32f4xx_ltdc.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_ltdc.h" path="lib/inc/stm32f4xx_ltdc.h" type="1"/>
+    <File name="lib/src/stm32f4xx_can.c" path="lib/src/stm32f4xx_can.c" type="1"/>
+    <File name="lib/src/stm32f4xx_hash_md5.c" path="lib/src/stm32f4xx_hash_md5.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_can.h" path="lib/inc/stm32f4xx_can.h" type="1"/>
+    <File name="CMSIS/arm_common_tables.h" path="CMSIS/arm_common_tables.h" type="1"/>
+    <File name="lib/src/stm32f4xx_crc.c" path="lib/src/stm32f4xx_crc.c" type="1"/>
+    <File name="CMSIS/core_cm3.h" path="CMSIS/core_cm3.h" type="1"/>
+    <File name="lib/inc/stm32f4xx_dbgmcu.h" path="lib/inc/stm32f4xx_dbgmcu.h" type="1"/>
+    <File name="lib/src/stm32f4xx_hash_sha1.c" path="lib/src/stm32f4xx_hash_sha1.c" type="1"/>
+    <File name="mylib/inc/button.h" path="mylib/inc/button.h" type="1"/>
+    <File name="mylib/inc/stack.h" path="mylib/inc/stack.h" type="1"/>
+    <File name="lib/src/stm32f4xx_tim.c" path="lib/src/stm32f4xx_tim.c" type="1"/>
+    <File name="lib/inc" path="" type="2"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="mylib/inc/delay.h" path="mylib/inc/delay.h" type="1"/>
+    <File name="mylib/src/stack.c" path="mylib/src/stack.c" type="1"/>
+    <File name="lib/inc/stm32f4xx_spi.h" path="lib/inc/stm32f4xx_spi.h" type="1"/>
+    <File name="mylib/inc/sensor.h" path="mylib/inc/sensor.h" type="1"/>
+    <File name="boot/stm32f4xx_conf.h" path="boot/stm32f4xx_conf.h" type="1"/>
+    <File name="CMSIS/core_sc300.h" path="CMSIS/core_sc300.h" type="1"/>
+    <File name="lib/src/stm32f4xx_rcc.c" path="lib/src/stm32f4xx_rcc.c" type="1"/>
+    <File name="boot/system_stm32f4xx.c" path="boot/system_stm32f4xx.c" type="1"/>
+  </Files>
+</Project>

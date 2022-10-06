@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F405RG -DSTM32F4XX -D__FPU_USED -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\_b\DEV\CooCox -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2\mylib\inc -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2\lib\inc -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2\boot -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2\mylib -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2\lib -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2 -I..\..\..\..\..\Users\_b\DEV\CooCox\Dendryt v2\CMSIS -I..\..\..\..\..\Users\_b\DEV">
+      <target file="stm32f4xx_cryp_aes.o" lastModified="14bee858ad9">
+         <source file="..\..\..\lib\src\stm32f4xx_cryp_aes.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_fsmc.o" lastModified="14bee8595d2">
+         <source file="..\..\..\lib\src\stm32f4xx_fsmc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="syscalls.o" lastModified="14bee859836">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="148f63a263c"/>
+      </target>
+      <target file="misc.o" lastModified="14bee859b7d">
+         <source file="..\..\..\lib\src\misc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_ltdc.o" lastModified="14bee858f6e">
+         <source file="..\..\..\lib\src\stm32f4xx_ltdc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="led.o" lastModified="14bee858d67">
+         <source file="..\..\..\mylib\src\led.c" lastModified="14995215cc0"/>
+      </target>
+      <target file="stm32f4xx_flash_ramfunc.o" lastModified="14bee859624">
+         <source file="..\..\..\lib\src\stm32f4xx_flash_ramfunc.c" lastModified="147a1200cd0"/>
+      </target>
+      <target file="stm32f4xx_cryp.o" lastModified="14bee859556">
+         <source file="..\..\..\lib\src\stm32f4xx_cryp.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_cryp_des.o" lastModified="14bee8594e3">
+         <source file="..\..\..\lib\src\stm32f4xx_cryp_des.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="14bee859eaa">
+         <source file="..\..\..\lib\src\stm32f4xx_tim.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="usart.o" lastModified="14bee859f5b">
+         <source file="..\..\..\mylib\src\usart.c" lastModified="14995215cc0"/>
+      </target>
+      <target file="stm32f4xx_iwdg.o" lastModified="14bee859059">
+         <source file="..\..\..\lib\src\stm32f4xx_iwdg.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="14bee859b23">
+         <source file="..\..\..\lib\src\stm32f4xx_exti.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="14bee85968e">
+         <source file="..\..\..\lib\src\stm32f4xx_gpio.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="pwm.o" lastModified="14bee858e7a">
+         <source file="..\..\..\mylib\src\pwm.c" lastModified="1499fe0c90e"/>
+      </target>
+      <target file="delay.o" lastModified="14bee85885c">
+         <source file="..\..\..\mylib\src\delay.c" lastModified="14995215cc0"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="14bee858c15">
+         <source file="..\..\..\lib\src\stm32f4xx_usart.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_rtc.o" lastModified="14bee859c38">
+         <source file="..\..\..\lib\src\stm32f4xx_rtc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_hash_sha1.o" lastModified="14bee858b92">
+         <source file="..\..\..\lib\src\stm32f4xx_hash_sha1.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="14bee859158">
+         <source file="..\..\..\lib\src\stm32f4xx_rcc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_dac.o" lastModified="14bee858ee5">
+         <source file="..\..\..\lib\src\stm32f4xx_dac.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_can.o" lastModified="14bee858d11">
+         <source file="..\..\..\lib\src\stm32f4xx_can.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_pwr.o" lastModified="14bee858c7d">
+         <source file="..\..\..\lib\src\stm32f4xx_pwr.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_wwdg.o" lastModified="14bee858dbf">
+         <source file="..\..\..\lib\src\stm32f4xx_wwdg.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="controller.o" lastModified="14bf015c25c">
+         <source file="..\..\..\mylib\src\controller.c" lastModified="14befdc28bb"/>
+      </target>
+      <target file="stm32f4xx_rng.o" lastModified="14bee859ac5">
+         <source file="..\..\..\lib\src\stm32f4xx_rng.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="14bee8593c4">
+         <source file="..\..\..\lib\src\stm32f4xx_adc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_flash.o" lastModified="14bee859718">
+         <source file="..\..\..\lib\src\stm32f4xx_flash.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="buzzer.o" lastModified="14bee858b32">
+         <source file="..\..\..\mylib\src\buzzer.c" lastModified="14995215cc0"/>
+      </target>
+      <target file="stm32f4xx_cryp_tdes.o" lastModified="14bee859dc1">
+         <source file="..\..\..\lib\src\stm32f4xx_cryp_tdes.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14bee858fac">
+         <source file="..\..\..\boot\startup_stm32f4xx.c" lastModified="149721ec17a"/>
+      </target>
+      <target file="stm32f4xx_dcmi.o" lastModified="14bee85942d">
+         <source file="..\..\..\lib\src\stm32f4xx_dcmi.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="14bee8598ac">
+         <source file="..\..\..\lib\src\stm32f4xx_dma.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stack.o" lastModified="14bee85995f">
+         <source file="..\..\..\mylib\src\stack.c" lastModified="14bdca65f5f"/>
+      </target>
+      <target file="stm32f4xx_sai.o" lastModified="14bee859789">
+         <source file="..\..\..\lib\src\stm32f4xx_sai.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="button.o" lastModified="14bee858936">
+         <source file="..\..\..\mylib\src\button.c" lastModified="14995215cc0"/>
+      </target>
+      <target file="sensor.o" lastModified="14befa87930">
+         <source file="..\..\..\mylib\src\sensor.c" lastModified="14beaa1f143"/>
+      </target>
+      <target file="algo.o" lastModified="14bf015c07d">
+         <source file="..\..\..\mylib\src\algo.c" lastModified="14bf01595bc"/>
+      </target>
+      <target file="stm32f4xx_crc.o" lastModified="14bee859004">
+         <source file="..\..\..\lib\src\stm32f4xx_crc.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_sdio.o" lastModified="14bee8588db">
+         <source file="..\..\..\lib\src\stm32f4xx_sdio.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="14bee8591ee">
+         <source file="..\..\..\boot\stm32f4xx_it.c" lastModified="14a0563ea1b"/>
+      </target>
+      <target file="stm32f4xx_hash_md5.o" lastModified="14bee858e1e">
+         <source file="..\..\..\lib\src\stm32f4xx_hash_md5.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_dbgmcu.o" lastModified="14bee859eff">
+         <source file="..\..\..\lib\src\stm32f4xx_dbgmcu.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="14bee859a68">
+         <source file="..\..\..\lib\src\stm32f4xx_i2c.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="14bee858557">
+         <source file="..\..\..\lib\src\stm32f4xx_syscfg.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="adc.o" lastModified="14bee859903">
+         <source file="..\..\..\mylib\src\adc.c" lastModified="14995215cc0"/>
+      </target>
+      <target file="stm32f4xx_hash.o" lastModified="14bee8589a6">
+         <source file="..\..\..\lib\src\stm32f4xx_hash.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="14bee8599e1">
+         <source file="..\..\..\lib\src\stm32f4xx_spi.c" lastModified="14791f0e770"/>
+      </target>
+      <target file="encoder.o" lastModified="14bee859485">
+         <source file="..\..\..\mylib\src\encoder.c" lastModified="14a0609b49e"/>
+      </target>
+      <target file="main.o" lastModified="14bf015c11a">
+         <source file="..\..\..\main.c" lastModified="14befedfc5c"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14bee8597e1">
+         <source file="..\..\..\boot\system_stm32f4xx.c" lastModified="1490a57bad0"/>
+      </target>
+      <target file="stm32f4xx_dma2d.o" lastModified="14bee858a1a">
+         <source file="..\..\..\lib\src\stm32f4xx_dma2d.c" lastModified="14791f0e770"/>
+      </target>
+   </processor>
+</history>
